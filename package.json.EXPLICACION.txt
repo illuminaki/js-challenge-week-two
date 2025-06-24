@@ -1,0 +1,8 @@
+Explicación de dependencias del package.json:
+
+- express: Framework minimalista para crear servidores web en Node.js. Permite definir endpoints y manejar peticiones HTTP fácilmente.
+- dotenv: Permite cargar variables de entorno desde un archivo .env para mantener claves y configuraciones sensibles fuera del código fuente.
+- cors: Middleware para habilitar CORS (Cross-Origin Resource Sharing), necesario para que tu frontend (que puede estar en otro puerto) pueda comunicarse con tu backend sin problemas de seguridad del navegador.
+- node-fetch: Permite hacer peticiones HTTP desde Node.js, similar a fetch en el navegador. Se usa aquí para llamar a la API de OpenAI desde el backend.
+
+Puedes consultar este archivo junto al package.json para entender rápidamente el propósito de cada dependencia.

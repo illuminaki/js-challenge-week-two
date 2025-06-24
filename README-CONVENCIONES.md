@@ -1,4 +1,4 @@
-# 📋 Convenciones de nombramiento y buenas prácticas
+# Convenciones de nombramiento y buenas prácticas
 
 ## 1. Convenciones para nombramiento de ramas (Azure DevOps)
 

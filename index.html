@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos básicos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat JS con OpenAI</title>
+
+  <!-- Enlace a la hoja de estilos y a una fuente de Google Fonts para un look más moderno -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Contenedor principal que empuja el footer hacia abajo -->
+  <div class="main-content">
+    <!-- Contenedor principal de la aplicación de chat -->
+    <div class="chat-app">
+
+    <!-- Encabezado de la aplicación -->
+    <header class="chat-header">
+      <h1>Chat con IA</h1>
+      <p>Proyecto con JavaScript y OpenAI</p>
+    </header>
+
+    <!-- Contenedor de los mensajes del chat, con aria-live para accesibilidad -->
+    <main id="chat" class="chat-window" aria-live="polite"></main>
+
+    <!-- Área de entrada de texto del chat (anteriormente footer) -->
+    <div class="chat-input-area">
+      <!-- Indicadores de estado para el usuario -->
+      <div class="chat-status">
+        <div id="typing" class="typing-indicator" style="display:none;">La IA está escribiendo...</div>
+        <div id="estado" class="status-message"></div>
+      </div>
+
+      <!-- Formulario para enviar mensajes -->
+      <form id="formulario" class="chat-form" autocomplete="off">
+        <input type="text" id="inputMensaje" placeholder="Escribe tu mensaje aquí..." required />
+        <button type="submit" aria-label="Enviar mensaje">
+          <!-- Icono SVG para el botón de enviar -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
+    </div> <!-- Fin de .chat-input-area -->
+
+      </div> <!-- Fin de .chat-app -->
+  </div> <!-- Fin de .main-content -->
+
+  <!-- Pie de página de la aplicación -->
+  <footer class="page-footer">
+    <p>&copy; 2025 Chat JS. Creado por Sebastian Agudelo.</p>
+  </footer>
+
+  <!-- Enlace al script de JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
